@@ -7,5 +7,10 @@
   </head>
   <body>
     <h1>List of Projects</h1>
+
+    {% for project in projects %}
+    <p>{{ project }}</p>
+
+    {% endfor %}
   </body>
 </html>
