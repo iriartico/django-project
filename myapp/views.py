@@ -1,12 +1,13 @@
 from django.http import HttpResponse, JsonResponse
 from .models import Project, Task
 from django.shortcuts import render, get_object_or_404
+from .forms import CreateNewTask
 
 # Create your views here.
 def index(request):
-    tittle = "Django Course!!"
+    title = "Django Course"
     return render(request, 'index.html', {
-        'tittle': tittle
+        'title': title
     })
 
 def about(request):
@@ -28,3 +29,15 @@ def tasks(request):
     return render(request, 'tasks.html', {
         'tasks': tasks
     })
+
+def create_task(request):
+    # print(request.GET['title'])
+    # print(request.GET['description'])
+    # Task.objects.create(title=request.GET['title'], description=request.GET['description'],
+    #                     projectkey=1)
+    # return render(request, 'create_task.html',{
+    #     'form': CreateNewTask()
+    # })
+    # if request.method == 'GET':Dreturn render(request, 'create_task.html',{
+    #     'form': CreateNewTask()
+    pass

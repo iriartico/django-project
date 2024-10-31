@@ -1,69 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to {{ tittle }} </title>
-  </head>
-  <body>
-    <h1>Welcome to {{ tittle }}</h1>
-    <p>Is this my firt app in django, wish me luck</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias
-      explicabo eaque repudiandae, facere est mollitia, itaque asperiores magnam
-      autem velit fuga incidunt ipsum minima, ducimus nemo? Quasi ad obcaecati
-      adipisci, debitis beatae aliquid perferendis error exercitationem sapiente
-      officiis veniam, at consequatur eos dignissimos, ratione magnam alias
-      ducimus ipsam sed qui asperiores quaerat! Minima animi aut id illo
-      reprehenderit dolorum mollitia sapiente doloribus. Quod officiis corrupti
-      reiciendis repellendus doloremque provident aliquid fugiat tempore
-      cupiditate! Vero dignissimos ea praesentium dolorum omnis veniam vitae
-      distinctio fugiat, quo asperiores cum officia magnam aliquam deserunt,
-      beatae eaque! Amet culpa, laborum voluptatibus impedit quasi incidunt quae
-      molestiae veritatis obcaecati beatae minus mollitia magnam facilis quod
-      aspernatur vel. Suscipit mollitia tempore explicabo earum temporibus
-      possimus quia nam neque facilis aspernatur minus, quisquam provident.
-      Eaque iusto at dolorum sint consectetur, repudiandae fugit earum quaerat
-      quibusdam ratione itaque impedit incidunt dicta corporis accusamus tenetur
-      nam, deserunt, reiciendis laudantium? Nisi est quidem quia fugiat! Omnis
-      molestias ab ducimus consequatur nihil, itaque libero vitae ratione
-      cupiditate dolores temporibus! Non voluptates cumque tenetur
-      necessitatibus sunt rem eveniet iusto error quas repellat. Vel vero
-      laborum cupiditate minus iure tenetur nulla itaque, architecto reiciendis.
-      Ipsam incidunt quia animi assumenda ex minima ea beatae, recusandae
-      molestias pariatur quibusdam cupiditate ducimus rem dolores possimus
-      accusamus eaque. Dolore officiis, omnis beatae corrupti labore, adipisci
-      aperiam quod ut est quibusdam quas explicabo inventore aspernatur non
-      excepturi voluptatibus eligendi eos fugiat dicta, suscipit sapiente.
-      Inventore officiis quae suscipit exercitationem voluptatem rem labore,
-      beatae vitae et, magni consectetur excepturi repellat eos error deserunt
-      ducimus. Sequi earum quasi totam deleniti quia sunt alias, incidunt
-      adipisci reprehenderit minima maxime quas repellat, fugiat officia nisi
-      odit perspiciatis, dolorem delectus vel magni praesentium dolore non neque
-      illo. Doloribus nesciunt quia fuga pariatur dolor sit officiis? Ea
-      delectus sunt commodi ipsam. Aliquid earum eveniet exercitationem, ad
-      nihil reprehenderit. A, velit, accusamus id vel sequi consectetur ducimus,
-      vitae impedit sint maiores assumenda natus blanditiis corrupti obcaecati
-      cumque. Ipsa facere cum iure dignissimos quibusdam porro fuga, laboriosam
-      animi velit vitae hic officia necessitatibus temporibus at. Aliquid, earum
-      magnam? Voluptatum praesentium quasi vero distinctio vitae voluptate eum
-      maxime architecto, amet ea nam, neque nesciunt aliquam consequuntur autem
-      accusamus quam necessitatibus adipisci nemo dolore rerum possimus in? Ex
-      odit nesciunt sunt dicta temporibus itaque fugit rerum, id quasi ullam quo
-      cumque atque architecto exercitationem asperiores dolor quaerat iure
-      distinctio dignissimos autem. Odit omnis nulla dolorum ducimus nesciunt,
-      quos assumenda voluptatum ex soluta quidem? Quis ad dolorem at
-      necessitatibus eveniet explicabo itaque totam quae aliquam cum provident
-      pariatur commodi autem, ea, cupiditate, quas amet velit earum. Architecto
-      magni labore numquam quia sint? Repellendus nemo ut nostrum doloremque non
-      minima recusandae mollitia dolore dolores totam distinctio temporibus
-      eaque odit, eos obcaecati beatae assumenda, voluptatum eveniet.
-      Accusantium dicta odit laudantium inventore corporis blanditiis? Magni
-      placeat error explicabo nisi, repellat nobis praesentium repellendus,
-      obcaecati molestiae est ab corporis perspiciatis, optio dignissimos
-      sapiente nostrum sequi eum veniam? Distinctio unde cumque provident sunt
-      veniam, ex aliquam ratione omnis. Assumenda impedit ab doloremque quae
-      maxime.
-    </p>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Welcome to {{ title }}</h1>
+  <p>This is my first app in Django, wish me luck!</p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias...
+    <!-- el resto de tu contenido va aquí -->
+  </p>
+{% endblock %}

@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
-  </head>
-  <body>
-    <h1>List of Projects</h1>
+{% extends 'base.html' %} 
 
-    {% for project in projects %}
-    <p>{{ project }}</p>
+{% block content %}
+<h1>List of Projects</h1>
 
-    {% endfor %}
-  </body>
-</html>
+{% for project in projects %}
+<p>{{ project }}</p>
+
+{% endfor %} 
+{% endblock %}
+

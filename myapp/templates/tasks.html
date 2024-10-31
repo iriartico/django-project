@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks</title>
-  </head>
-  <body>
-    <h1>List of Tasks</h1>
+{% extends 'base.html' %} {% block content %}
+<h1>List of Tasks</h1>
 
-      {% for task in tasks %}
+{% for task in tasks %}
 
-        <h2>{% if task.done == False%} ⌛ {%else%} ✅ {%endif%} {{ task.title }}</h2>
+<h2>{% if task.done == False%} ⌛ {%else%} ✅ {%endif%} {{ task.title }}</h2>
 
-        <p> {{ task.description }} </p>
-        <p> Project: {{ task.project }} </p>
-        <button>Delete</button>
-        <button>Done</button>
+<p>{{ task.description }}</p>
+<p>Project: {{ task.project }}</p>
+<button>Delete</button>
+<button>Done</button>
 
-      {% endfor %}
-
-  </body>
-</html>
+{% endfor %} {% endblock %}
