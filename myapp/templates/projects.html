@@ -1,11 +1,11 @@
-{% extends 'base.html' %} 
-
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <h1>List of Projects</h1>
 
 {% for project in projects %}
-<p>{{ project }}</p>
+<article class="card">
+  <a href="">
+    <p>{{ project }}</p>
+  </a>
+</article>
 
-{% endfor %} 
-{% endblock %}
-
+{% endfor %} {% endblock %}

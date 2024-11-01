@@ -1,6 +1,6 @@
 from django.http import HttpResponse, JsonResponse
 from .models import Project, Task
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CreateNewProject, CreateNewTask
 
 
@@ -29,7 +29,7 @@ def create_project(request):
             name=request.POST["name"],
         )
         # return redirect("tasks/")
-        return redirect("/projects/")
+        return redirect("projects")
 
 
 def tasks(request):
@@ -50,4 +50,11 @@ def create_task(request):
             project_id=2,
         )
         # return redirect("tasks/")
-        return redirect("/tasks/")
+        return redirect("view_tasks")
+
+
+def project_detail(request, id):
+    project = get_object_or_404(Project, id=id)
+    tasks = Task.objects.filter(project_id=id)
+    # tasks = Task.objects.all()
+    return render(request, "project/detail.html", {"project": project, "tasks": tasks})
